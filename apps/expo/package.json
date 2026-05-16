@@ -1,0 +1,21 @@
+{
+  "name": "@trainer/expo",
+  "private": true,
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "dev": "expo start",
+    "build": "echo 'Expo app build handled by EAS build'",
+    "lint": "biome check .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "expo": "^53.0.0",
+    "react": "^19.0.0",
+    "react-native": "^0.79.0",
+    "@trainer/client-api": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
