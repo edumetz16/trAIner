@@ -5,3 +5,5 @@ export * from './domain/channel';
 export * from './domain/convocation';
 export * from './domain/calendar';
 export * from './auth/session';
+export * from './domain/team';
+export * from './domain/roster';

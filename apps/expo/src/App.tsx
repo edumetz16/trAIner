@@ -4,16 +4,15 @@ import { TrainerApiClient } from '@trainer/client-api';
 
 export default function App() {
   const [result, setResult] = useState('');
-
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', gap: 8 }}>
       <Text>Plantel Expo MVP</Text>
       <Button
-        title="Login demo"
+        title="Ver plantel"
         onPress={async () => {
           const api = new TrainerApiClient('http://localhost:5001');
-          const session = await api.login({ email: 'coach@plantel.app', password: 'password123' });
-          setResult(`${session.role} ${session.clubId}`);
+          const data = await api.listPlayers();
+          setResult(`Jugadores: ${data.players.length}`);
         }}
       />
       <Text>{result}</Text>
