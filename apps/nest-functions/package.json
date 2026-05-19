@@ -1,0 +1,25 @@
+{
+  "name": "@trainer/nest-functions",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsc -w -p tsconfig.build.json",
+    "lint": "echo 'Add Nest lint config'",
+    "typecheck": "tsc --noEmit",
+    "serve:functions": "firebase emulators:start --only functions"
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.1.0",
+    "@nestjs/core": "^11.1.0",
+    "@nestjs/platform-express": "^11.1.0",
+    "express": "^4.21.1",
+    "firebase-admin": "^13.0.0",
+    "firebase-functions": "^6.1.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
